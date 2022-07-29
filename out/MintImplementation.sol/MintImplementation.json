@@ -1,0 +1,235 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "quantity",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalQuantity",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060f68061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063a0712d68146037578063c616f412146048575b600080fd5b604660423660046083565b6062565b005b605060005481565b60405190815260200160405180910390f35b606981606c565b50565b80600080828254607b9190609b565b909155505050565b600060208284031215609457600080fd5b5035919050565b6000821982111560bb57634e487b7160e01b600052601160045260246000fd5b50019056fea264697066735822122086617246d94afe4a3ff1718705e8b603d8a899a847622bc096c767f1a3c2ad7164736f6c634300080f0033",
+    "sourceMap": "93:123:2:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063a0712d68146037578063c616f412146048575b600080fd5b604660423660046083565b6062565b005b605060005481565b60405190815260200160405180910390f35b606981606c565b50565b80600080828254607b9190609b565b909155505050565b600060208284031215609457600080fd5b5035919050565b6000821982111560bb57634e487b7160e01b600052601160045260246000fd5b50019056fea264697066735822122086617246d94afe4a3ff1718705e8b603d8a899a847622bc096c767f1a3c2ad7164736f6c634300080f0033",
+    "sourceMap": "93:123:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;138:76;;;;;;:::i;:::-;;:::i;:::-;;99:28:0;;;;;;;;;345:25:5;;;333:2;318:18;99:28:0;;;;;;;138:76:2;194:15;200:8;194:5;:15::i;:::-;138:76;:::o;132:80:0:-;199:8;182:13;;:25;;;;;;;:::i;:::-;;;;-1:-1:-1;;;132:80:0:o;14:180:5:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:5;;14:180;-1:-1:-1;14:180:5:o;381:225::-;421:3;452:1;448:6;445:1;442:13;439:136;;;497:10;492:3;488:20;485:1;478:31;532:4;529:1;522:15;560:4;557:1;550:15;439:136;-1:-1:-1;591:9:5;;381:225::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "mint(uint256)": "a0712d68",
+    "totalQuantity()": "c616f412"
+  },
+  "ast": {
+    "absolutePath": "contracts/MintImplementation.sol",
+    "id": 61,
+    "exportedSymbols": {
+      "BaseMint": [
+        14
+      ],
+      "MintImplementation": [
+        60
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:176:2",
+    "nodes": [
+      {
+        "id": 46,
+        "nodeType": "PragmaDirective",
+        "src": "41:24:2",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 47,
+        "nodeType": "ImportDirective",
+        "src": "67:24:2",
+        "absolutePath": "contracts/BaseMint.sol",
+        "file": "./BaseMint.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 61,
+        "sourceUnit": 15,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 60,
+        "nodeType": "ContractDefinition",
+        "src": "93:123:2",
+        "nodes": [
+          {
+            "id": 59,
+            "nodeType": "FunctionDefinition",
+            "src": "138:76:2",
+            "body": {
+              "id": 58,
+              "nodeType": "Block",
+              "src": "179:35:2",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 55,
+                        "name": "quantity",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51,
+                        "src": "200:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 54,
+                      "name": "_mint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "194:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 56,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "194:15:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "functionReturnParameters": 53,
+                  "id": 57,
+                  "nodeType": "Return",
+                  "src": "187:22:2"
+                }
+              ]
+            },
+            "functionSelector": "a0712d68",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "147:4:2",
+            "parameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51,
+                  "mutability": "mutable",
+                  "name": "quantity",
+                  "nameLocation": "160:8:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 59,
+                  "src": "152:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 50,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "151:18:2"
+            },
+            "returnParameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "179:0:2"
+            },
+            "scope": 60,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 48,
+              "name": "BaseMint",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 14,
+              "src": "124:8:2"
+            },
+            "id": 49,
+            "nodeType": "InheritanceSpecifier",
+            "src": "124:8:2"
+          }
+        ],
+        "canonicalName": "MintImplementation",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          60,
+          14
+        ],
+        "name": "MintImplementation",
+        "nameLocation": "102:18:2",
+        "scope": 61,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLINCENCEDs"
+  },
+  "id": 2
+}

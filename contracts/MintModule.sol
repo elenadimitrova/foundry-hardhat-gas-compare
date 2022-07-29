@@ -5,8 +5,8 @@ import "./MintImplementation.sol";
 
 contract MintModule {
 
-  function mint(MintImplementation minter, uint256 quantity) external {
+  function mint(address minter, uint256 quantity) external {
     // External call to MintImplementation (using a minimal proxy)
-    minter.mint(quantity);
+    MintImplementation(minter).mint(quantity);
   }
 }
