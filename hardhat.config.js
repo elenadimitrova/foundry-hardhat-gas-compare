@@ -1,4 +1,4 @@
-require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-waffle");
 require("hardhat-gas-reporter");
 
 module.exports = {
@@ -11,8 +11,4 @@ module.exports = {
       }
     }
   },
-  gasReporter: {
-    currency: 'USD',
-    gasPrice: 21
-  }
 };
